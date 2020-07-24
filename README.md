@@ -12,7 +12,9 @@ One prerequisite is to have Python installed and have valid understanding on the
 
 Create an isolated working environment with conda.
 
+
 ```shell
+conda config --append channels conda-forge
 conda create --name env_pm django-bootstrap4=1.0.1 django-crispy-forms=1.7.0 django-leaflet=0.24.0 django-agnocomplete python=3.6
 ```
 Important: Make sure you install the aforementioned versions for the dependencies because of the compatibility reasons. 
@@ -29,6 +31,9 @@ conda activate env_pm
 * `activate the new virtual environment (source env_pm/bin/activate)`
 Install the following packages (if you have not done so already):
 `django-bootstrap4 django-crispy-forms django-leaflet django-agnocomplete`
+
+Might also be better to get req.txt from this git and install it (should bring all needed requirements)
+'pip install -r req.txt' 
 
 ### Running the application
 
